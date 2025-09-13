@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenPro Lawncare</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0fdf4; /* soft green background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .logo-container {
+      text-align: center;
+    }
+    .logo-container img {
+      max-width: 300px; /* adjust size as needed */
+      height: auto;
+    }
+    .logo-container h1 {
+      color: #2f855a; /* darker green text */
+      margin-top: 20px;
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="greenpro-logo.png" alt="GreenPro Logo">
+    <h1>GreenPro Lawncare</h1>
+  </div>
+</body>
+</html>
