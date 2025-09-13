@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GreenPro Lawncare</title>
+  <meta name="description" content="Professional lawncare services — see our work, read reviews, and contact us today!">
+  <style>
+    :root{--bg:#f0fdf4;--card:#ffffff;--accent:#22c55e;--muted:#475569;--dark:#052e16}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,sans-serif;margin:0;background:var(--bg);color:var(--dark)}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:800;font-size:1.4rem;color:var(--accent)}
+    nav ul{list-style:none;display:flex;gap:20px;margin:0;padding:0}
+    nav a{color:var(--muted);font-weight:600}
+    nav a:hover{color:var(--accent)}
+
+    /* Hero */
+    .hero{padding:60px 0;text-align:center}
+    .hero h1{font-size:clamp(2rem,5vw,3rem);margin-bottom:12px;color:var(--dark)}
+    .hero p{color:var(--muted);max-width:650px;margin:0 auto 20px}
+    .cta{background:var(--accent);padding:12px 22px;border-radius:8px;color:#fff;font-weight:700;display:inline-block}
+
+    /* Section */
+    section{margin:60px 0}
+    h2{font-size:1.8rem;margin-bottom:20px;text-align:center;color:var(--dark)}
+
+    /* Portfolio */
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .thumb{height:200px;border-radius:12px;background-size:cover;background-position:center;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+
+    /* Reviews */
+    .reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .review{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    .stars{color:gold;font-size:1.1rem;margin-bottom:6px}
+
+    /* Contact */
+    form{max-width:500px;margin:0 auto;display:grid;gap:12px}
+    input,textarea{padding:12px;border-radius:8px;border:1px solid #d1d5db;font-family:inherit}
+    button{padding:12px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+    button:hover{background:#16a34a}
+
+    footer{margin:40px 0;text-align:center;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">GreenPro Lawncare</div>
+      <nav>
+        <ul>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Reliable Lawncare, Beautiful Results</h1>
+        <p>At GreenPro Lawncare, we take pride in transforming yards into healthy, green, and well-kept outdoor spaces. Explore our past work and see why our clients rate us highly.</p>
+        <a href="#contact" class="cta">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2>Previous Work</h2>
+      <div class="container">
+        <div class="gallery">
+          <div class="thumb" style="background-image:url('https://picsum.photos/400/300?random=11')"></div>
+          <div class="thumb" style="background-image:url('https://picsum.photos/400/300?random=12')"></div>
+          <div class="thumb" style="background-image:url('https://picsum.photos/400/300?random=13')"></div>
+          <div class="thumb" style="background-image:url('https://picsum.photos/400/300?random=14')"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Client Reviews</h2>
+      <div class="container">
+        <div class="reviews">
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“GreenPro turned my overgrown yard into a beautiful space. Couldn’t be happier!”</p>
+            <strong>- Sarah L.</strong>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★☆</div>
+            <p>“Fast, friendly, and professional service. My lawn has never looked better.”</p>
+            <strong>- Mark D.</strong>
+          </div>
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Excellent work! They showed up on time and went above and beyond.”</p>
+            <strong>- Jasmine K.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="container">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 GreenPro Lawncare • All rights reserved</div>
+  </footer>
+</body>
+</html>
+
