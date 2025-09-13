@@ -127,20 +127,26 @@
  <section id="contact">
   <h2>Contact Us</h2>
   <div class="container">
-   <form
-  action="https://formspree.io/f/meoldnnk"
-  method="POST"
->
-      <!-- Hidden input required by Formspree -->
-      <input type="hidden" name="_subject" value="New Contact Form Submission">
-      
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="text" name="address" placeholder="Your Address" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <textarea name="message" rows="4" placeholder="What do you need done?" required></textarea>
-      
-      <button type="submit">Send Message</button>
-    </form>
+   <form action="https://formspree.io/f/meoldnnk" method="POST">
+  <label>
+    Your Name:
+    <input type="text" name="name" required>
+  </label>
+  <label>
+    Your Address:
+    <input type="text" name="address" required>
+  </label>
+  <label>
+    Your Email:
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    What do you need done?
+    <textarea name="message" rows="4" required></textarea>
+  </label>
+  <button type="submit">Send Message</button>
+</form>
+
   </div>
 </section>
 
@@ -153,6 +159,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
